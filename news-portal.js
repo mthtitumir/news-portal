@@ -28,5 +28,7 @@ const showAllNews = (data, categoryName) =>{
     console.log(data.data, categoryName);
     document.getElementById('news-count').innerText=data.data.length;
     document.getElementById('category-name').innerText=categoryName;
-    console.log(data.data.category_name)
+    data.data.forEach(singleNews=>{
+        console.log(singleNews);
+    })
 }
